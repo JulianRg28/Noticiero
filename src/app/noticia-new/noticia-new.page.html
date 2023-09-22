@@ -1,0 +1,44 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Noticias</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">noticias</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-list>
+
+    <ion-item lines="none">
+        <h1 slot="start" >{{titleNew}}</h1>
+        <ion-icon slot="end" color="primary" name="play-back-outline" (click)="back()"></ion-icon>
+    </ion-item>
+  </ion-list>
+  <ion-card>
+    <img alt="imagen encabezado" src="{{url_imagNew}}" />
+    <ion-card-header>
+      <ion-toolbar>
+        <span slot="start">Subtitulo</span>  <span slot="end">{{dateNew}}</span>
+
+      </ion-toolbar>
+    </ion-card-header>
+
+    <ion-card-content class="ion-text-justify">
+      Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas 'Letraset', las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum
+    </ion-card-content>
+    <ion-footer>
+      <ion-toolbar>
+      <ion-icon  class="like" name="heart-outline" size="large" color="danger" ></ion-icon>
+      <ion-icon name="eye-outline" size="large"></ion-icon>
+      <ion-icon class="" name="link-outline" size="large" color="primary" slot="end"></ion-icon>
+    </ion-toolbar>
+    </ion-footer>
+  </ion-card>
+
+</ion-content>
